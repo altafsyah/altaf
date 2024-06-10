@@ -7,3 +7,23 @@
     text-wrap: balance;
   }
 }
+
+.krona-one {
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+}
+
+.kulim-park {
+  font-family: "Kulim Park", sans-serif;
+  font-style: normal;
+}
+
+.card {
+  box-shadow: 5px 5px rgba(0, 0, 0, 1);
+  border: 2px solid rgba(0, 0, 0, 1);
+}
+
+body {
+  @apply kulim-park;
+  font-weight: 400;
+}
