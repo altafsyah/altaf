@@ -26,9 +26,9 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-mOrange min-h-screen w-screen p-10">
-        <main className="max-w-[820px] w-full mx-auto mt-40 grid grid-cols-8 gap-5">
-          <section className="col-span-6 grid grid-cols-6 gap-5">
+      <body className="bg-mOrange min-h-screen p-10">
+        <main className="relative max-w-[820px] w-full mx-auto mt-40 grid grid-cols-8 gap-5">
+          <section className="col-span-6">
             {children}
           </section>
           <Header />

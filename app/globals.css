@@ -27,3 +27,52 @@ body {
   @apply kulim-park;
   font-weight: 400;
 }
+
+.mdx * {
+  @apply text-base mt-2;
+}
+
+.mdx h1,
+.mdx h2,
+.mdx h3,
+.mdx h4,
+.mdx h5,
+.mdx h6 {
+  @apply krona-one;
+}
+
+.mdx h1 {
+  @apply text-2xl;
+}
+
+.mdx h2 {
+  @apply text-xl;
+}
+
+.mdx a {
+  @apply text-mDarkBlue underline font-bold;
+}
+
+.mdx ul {
+  @apply list-disc;
+}
+
+.mdx ol {
+  @apply list-decimal;
+}
+
+.mdx blockquote {
+  @apply text-lg;
+}
+
+.mdx img {
+  @apply w-full;
+}
+
+.mdx hr {
+  @apply border-t-2;
+}
+
+.mdx blockquote {
+  @apply border-l-4;
+}

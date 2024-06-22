@@ -3,8 +3,8 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <header className="col-span-2 grid grid-cols-1 gap-5">
-      <section className="bg-mDarkBlue card w-full p-4 rounded-xl h-full text-mYellow">
+    <header className="col-span-2 grid grid-cols-1 gap-5 h-fit sticky top-10">
+      <section className="bg-mDarkBlue card w-full p-4 rounded-xl text-mYellow h-fit">
         <h1 className="krona-one">Links</h1>
         <ul className="mt-6 flex flex-col gap-1.5">
           <li className="underline">
@@ -24,7 +24,7 @@ function Header() {
           </li>
         </ul>
       </section>
-      <section className="bg-mDarkBlue card w-full p-4 rounded-xl text-center text-mYellow">
+      <section className="bg-mDarkBlue card w-full p-4 rounded-xl text-center text-mYellow h-fit">
         <h1 className="text-base krona-one">Looking for collaboration?</h1>
         <p className="text-xs mt-2">
           Feel free to send me an email, kindly say “Hi” to me and I would reply

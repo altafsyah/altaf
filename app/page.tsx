@@ -1,9 +1,10 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <>
+    <section className="grid grid-cols-6 gap-5">
       <section className="col-span-4 bg-mYellow rounded-xl w-full p-8 card">
         <header className="flex gap-5 items-center">
           <div className="w-16 aspect-square rounded-full bg-mOrange relative overflow-hidden">
@@ -48,13 +49,13 @@ export default function Home() {
         <div className="flex justify-between items-end mt-16">
           <p>July 7, 2024</p>
           <Link
-            href="/"
+            href="/thoughts/what-and-why"
             className="py-2 px-4 rounded-full bg-mOrange krona-one text-xs border-2 border-black"
           >
             Read More
           </Link>
         </div>
       </section>
-    </>
+    </section>
   );
 }
