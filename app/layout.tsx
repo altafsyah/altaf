@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -28,9 +29,7 @@ export default function RootLayout({
       </head>
       <body className="bg-mOrange min-h-screen p-10">
         <main className="relative max-w-[820px] w-full mx-auto mt-40 grid grid-cols-8 gap-5">
-          <section className="col-span-6">
-            {children}
-          </section>
+          <section className="col-span-6">{children}</section>
           <Header />
         </main>
       </body>
