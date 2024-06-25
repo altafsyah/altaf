@@ -43,10 +43,10 @@ export default function Home() {
         </button>
       </section>
       <section className="sm:col-span-2 lg:col-span-4 bg-mYellow rounded-xl w-full p-5 card hover:bg-mYellow/50 transition-colors duration-75">
-        <h1 className="krona-one">What & Why?</h1>
+        <h1 className="krona-one">Alasan Membuat Website Pribadi</h1>
         <p>
           An explanation of what is this website about, and why would I put on
-          work for this website. Feel free to read
+          work for this website (Bahasa).
         </p>
         <div className="flex justify-between items-end mt-16">
           <p>July 7, 2024</p>
