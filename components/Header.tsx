@@ -16,7 +16,7 @@ function Header() {
 
   return (
     <>
-      <header className="sm:col-span-2 grid grid-cols-1 gap-5 h-fit lg:sticky top-10 order-1 lg:order-last">
+      <header className="sm:col-span-2 grid grid-cols-1 gap-5 h-fit lg:sticky top-10">
         <section className="bg-mDarkBlue card w-full p-4 rounded-xl text-mYellow h-fit">
           <h1 className="krona-one">Links</h1>
           <ul className="mt-6 flex lg:flex-col flex-wrap gap-1.5">
