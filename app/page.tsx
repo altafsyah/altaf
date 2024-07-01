@@ -1,15 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
+import avatar from "@/public/images/altaf.webp";
+import selectedWork from "@/public/images/website_1.webp";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <section className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-5">
+    <section className="w-full grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-5">
       <section className="sm:col-span-2 lg:col-span-4 bg-mYellow rounded-xl w-full p-5 lg:p-8 card">
         <header className="flex gap-5 items-center">
           <div className="w-16 aspect-square rounded-full bg-mOrange relative overflow-hidden">
             <Image
-              src="/altaf.webp"
+              src={avatar}
+              placeholder="blur"
               alt="Altaf Syahrastani"
               fill
               className="object-[center_10px]"
@@ -36,10 +39,10 @@ export default function Home() {
       <section className="cursor-pointer hover:bg-mDarkBlue/90 min-h-[250px] transition-all duration-75 group lg:col-span-2 bg-mDarkBlue rounded-xl w-full p-5 text-base card relative overflow-hidden">
         <h1 className="krona-one text-mYellow">Selected Works</h1>
         <div className="group-hover:-left-5 group-hover:-bottom-2 group-hover:scale-105 transition-all duration-300 w-full h-32 bg-mYellow absolute -left-10 -bottom-5 rounded-xl skew-y-6 border-2 border-black overflow-hidden">
-          <Image src="/website_1.webp" alt="Website 1" fill />
+          <Image src={selectedWork} placeholder="blur" alt="Website 1" fill />
         </div>
         <button className="absolute bottom-5 right-5 rounded-full px-4 py-2 bg-mOrange krona-one text-xs border-2 border-black">
-          OFALINK
+          Anggrek Dewata
         </button>
       </section>
       <section className="sm:col-span-2 lg:col-span-4 bg-mYellow rounded-xl w-full p-5 card hover:bg-mYellow/50 transition-colors duration-75">

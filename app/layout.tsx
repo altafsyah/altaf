@@ -4,8 +4,28 @@ import "./globals.css";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
-  title: "Altaf Syah || Personal Space",
-  description: "Altaf is a Frontend Developer who loves",
+  title: "Altaf | Frontend Developer",
+  description: "Altaf is a Frontend Developer who loves to build beautiful UI",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple.png",
+  },
+  authors: [
+    {
+      name: "Altaf Syah",
+    },
+  ],
+  keywords: [
+    "Altaf",
+    "Syahrastani",
+    "Frontend",
+    "Developer",
+    "React",
+    "JavaScript",
+    "Web",
+    "UI",
+    "Freelancer",
+  ],
 };
 
 export default function RootLayout({
@@ -27,9 +47,9 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-mOrange min-h-screen p-10">
+      <body className="bg-mOrange min-h-screen p-5 md:p-10">
         <main className="relative lg:max-w-[820px] w-full mx-auto mt-4 sm:mt-8 lg:mt-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-8 gap-5">
-          <section className="order-last lg:order-1 sm:col-span-2 lg:col-span-6">
+          <section className="order-last lg:order-1 sm:col-span-2 lg:col-span-6 w-full">
             {children}
           </section>
           <Header />
