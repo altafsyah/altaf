@@ -49,7 +49,7 @@ export default function RootLayout({
       </head>
       <body className="bg-mOrange min-h-screen p-5 md:p-10">
         <main className="relative lg:max-w-[820px] w-full mx-auto mt-4 sm:mt-8 lg:mt-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-8 gap-5">
-          <section className="order-last lg:order-1 sm:col-span-2 lg:col-span-6 w-full">
+          <section className="sm:col-span-2 lg:col-span-6 w-full">
             {children}
           </section>
           <Header />
