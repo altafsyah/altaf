@@ -1,7 +1,10 @@
 import WorkItem from "./work-item";
 import { data } from "./data";
-import Link from "next/link";
 import BackButton from "@/components/BackToHome";
+
+export const metadata = {
+  title: "Altaf - Works"
+}
 
 /* eslint-disable react/no-unescaped-entities */
 export default function Works() {
@@ -19,6 +22,7 @@ export default function Works() {
               title={item.title}
               description={item.description}
               url={item.url}
+              image={item.image}
               isOnline={item.isOnline}
             />
           ))}
