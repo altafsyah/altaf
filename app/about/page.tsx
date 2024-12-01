@@ -12,12 +12,12 @@ export default function About() {
       <BackButton href="/" title="Home" />
       <section className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
         <div className="card text-mYellow bg-mDarkBlue relative overflow-hidden rounded-xl p-5 row-span-2 min-h-40 hover:rotate-2">
-          {/* <Image
+          <Image
             src="/images/altaf-ril.webp"
             fill
             className="object-cover w-full h-full lg:scale-[2]"
             alt="Altaf Syahrastani"
-          /> */}
+          />
         </div>
         <div className="card p-5 rounded-xl bg-mYellow hover:-rotate-2">
           <div className="">
