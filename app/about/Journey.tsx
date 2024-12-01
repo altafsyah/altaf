@@ -57,16 +57,20 @@ export default function Journey() {
 
 const JourneyItem = ({ journey }: { journey: IJourneyData }) => {
   return (
-    <div>
-      <h2>{journey.title}</h2>
-      <p>{journey.content}</p>
-      <div className="relative w-full h-[200px] rounded bg-mOrange">
-        <Image
+    <div className="mt-2">
+      <h2 className="font-semibold">{journey.title}</h2>
+      <div
+        dangerouslySetInnerHTML={{ __html: journey.content }}
+        className="text-sm flex flex-col gap-2 mt-2"
+      />
+      <div className="relative w-full h-[200px] bg-mOrange mt-5 rounded-lg overflow-hidden flex flex-col justify-center items-center">
+        {/* <Image
           src={journey.image}
           alt={journey.title}
           fill
           className="w-full h-full object-cover"
-        />
+        /> */}
+        <h1 className="font-semibold">IMAGE SOON!</h1>
       </div>
     </div>
   );
