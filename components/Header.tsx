@@ -16,8 +16,8 @@ function Header() {
 
   return (
     <>
-      <header className="sm:col-span-2 grid grid-cols-1 gap-5 h-fit lg:sticky top-10">
-        <section className="bg-mDarkBlue card w-full p-4 rounded-xl text-mYellow h-fit">
+      <header className="sm:col-span-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-5 h-fit lg:sticky top-10">
+        <section className="bg-mDarkBlue card w-full p-4 rounded-xl text-mYellow h-fit md:h-full">
           <h1 className="krona-one">Links</h1>
           <ul className="mt-6 flex lg:flex-col flex-wrap gap-1.5">
             <li className="underline">
@@ -26,11 +26,13 @@ function Header() {
             <li className="underline">
               <Link href="/works">/works </Link>
             </li>
-            <li className="">
-              <button onClick={handleDialogShown}>/uses </button>
+            <li className="underline">
+              <Link href="https://2am.altafsy.space/" target="_blank">
+                /thoughts
+              </Link>
             </li>
             <li className="">
-              <button onClick={handleDialogShown}>/thoughts </button>
+              <button onClick={handleDialogShown}>/uses </button>
             </li>
             <li className="">
               <button onClick={handleDialogShown}>/gallery </button>

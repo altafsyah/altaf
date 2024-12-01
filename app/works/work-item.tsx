@@ -7,7 +7,7 @@ type WorkItemProps = {
   slug: string;
   title: string;
   description: string;
-  image?: string[];
+  image?: string;
   isOnline: boolean;
   url: string;
 };
@@ -17,12 +17,10 @@ export default function WorkItem(props: WorkItemProps) {
     <li className="rounded-lg overflow-hidden">
       <div className="relative w-full h-[180px] bg-mDarkBlue group">
         <Image
-          src={githubImage}
+          src={props.image!}
           alt="GitHub"
-          placeholder="blur"
-          width={50}
-          height={50}
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:scale-125 transition-transform duration-300"
+          fill
+          className="group-hover:scale-105 transition-transform duration-300 object-"
         />
       </div>
       <div className="mt-3">
