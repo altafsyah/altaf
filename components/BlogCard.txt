@@ -1,0 +1,47 @@
+<div className="flex items-center gap-5 card bg-red-500 p-5">
+            <div className="card bg-white p-3">
+              <h4 className="text-2xl font-bold">
+                How Do I Make Reusable Component in React
+              </h4>
+              <p className="mt-2">
+                I've been using React for web development for almost 3 years and
+                the most important things that I learn during these time is how
+                to make a component is fully reusable
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center gap-5 card bg-red-500 p-5">
+            <div className="card bg-white p-3">
+              <h4 className="text-2xl font-bold">
+                How Do I Make Reusable Component in React
+              </h4>
+              <p className="mt-2">
+                I've been using React for web development for almost 3 years and
+                the most important things that I learn during these time is how
+                to make a component is fully reusable
+              </p>
+            </div>
+          </div>
+          {/* <div className="flex flex-col gap-3 w-fit text-nowrap">
+            <div className="card bg-white px-5 py-2">Tech Related</div>
+            <div className="card bg-white px-5 py-2">My Thoughts</div>
+          </div> */}
+
+
+{/* Featured Blog */}
+      <section className="mt-5">
+        <div className="card w-fit bg-blue-500 px-5 py-2 text-2xl text-white font-bold ">
+          <h2>Sometimes I Write</h2>
+        </div>
+        <div className="flex gap-5 mt-6 text-black bg-black">
+          <div className="w-full h-full text-center flex justify-center items-center flex-col p-5 text-yellow-500 relative z-20">
+            <h2 className="text-xl font-bold">Unfortunately...</h2>
+            <p className="max-w-[250px] text-sm mt-3">
+              This website has just been revamped and my writings are not
+              formatted to the new layout so I can't show you.
+              <br />
+              Will be updated soon!
+            </p>
+          </div>
+        </div>
+      </section>

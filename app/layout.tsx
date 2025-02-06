@@ -2,6 +2,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
+import Link from "next/link";
+import { ThemeProvider } from "next-themes";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Altaf | Frontend Developer",
@@ -34,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -47,13 +50,33 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-mOrange min-h-screen p-5 md:p-10">
-        <main className="relative lg:max-w-[820px] w-full mx-auto mt-4 sm:mt-8 lg:mt-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-8 gap-5">
-          <section className="sm:col-span-2 lg:col-span-6 w-full">
+      <body className="min-h-screen px-5 md:px-8 bg-yellow-100 dark:bg-blue-950 transition-colors duration-150 overflow-x-hidden">
+        <ThemeProvider attribute="class">
+          <nav className="flex mt-5 py-5 justify-between items-center gap-5 container mx-auto max-w-screen-md dark:text-yellow-500">
+            <Link href="/">
+              <Image src="/logo.png" width={50} height={50} alt="Logo Altaf" />
+            </Link>
+            <ul className="flex gap-5 items-center">
+              {/* <li>
+                <Link href="/">About</Link>
+              </li>
+              <li>
+                <Link href="/">Works</Link>
+              </li>
+              <li>
+                <Link href="/">Blog</Link>
+              </li>
+              <li>
+                <button>Others</button>
+              </li> */}
+              {/* {TODO: Create Others menu to dropdown and show all menu} */}
+            </ul>
+          </nav>
+          <main className="relative w-full mx-auto container py-5 max-w-screen-md">
             {children}
-          </section>
-          <Header />
-        </main>
+            {/* <Header /> */}
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );
