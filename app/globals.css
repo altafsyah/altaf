@@ -50,6 +50,16 @@ body::-webkit-scrollbar-thumb {
   transition: all 300ms;
 }
 
+.grid-background {
+  background-image: url("/grid.png");
+  background-repeat: repeat;
+  background-size: 50%;
+}
+
+.grid-background:hover {
+  background-size: 48%;
+}
+
 html {
   scrollbar-gutter: stable;
 }
