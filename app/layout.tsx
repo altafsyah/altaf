@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/Header";
 import Link from "next/link";
 import { ThemeProvider } from "next-themes";
 import Image from "next/image";
@@ -74,7 +73,6 @@ export default function RootLayout({
           </nav>
           <main className="relative w-full mx-auto container py-5 max-w-screen-md">
             {children}
-            {/* <Header /> */}
           </main>
         </ThemeProvider>
       </body>
